@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="flex">
+            <span><i class="fa-solid fa-bars"></i></span>
+            <div id="nav" class="nav-toggle">
+                <ul class="flex">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Work">Work</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+            <h3>Logo</h3>
+        </nav>
+        <div id="Home" class="flex container">
+            <img src="Images/personMain.png" alt="">
+            <div>
+                <h1>Hi,<br> i am <span>Dnyaneshwar</span><br>i am a <span>frontend developer</span>
+                </h1>
+                <button>about me</button>
+                <div class="flex">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- About -->
+    <section id="About" class="container">
+        <h2>About</h2>
+        <div class="flex container">
+            <div class="sectionImg"><img src="Images/person.png" alt=""></div>
+            <div class="myInfo">
+                <h4>My Name is dnyaneshwar</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, dicta doloremque. Ea aut illo
+                    odit quas vitae voluptas sint praesentium impedit saepe, incidunt, ut ab.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum praesentium porro et quasi magnam,
+                    maiores dicta ipsa fuga pariatur facere doloribus deserunt iste est quas illum molestias eius
+                    incidunt modi.</p>
+                <button>read more</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="Skills" class="container">
+        <h2>Skills</h2>
+        <div class="flex container">
+            <div class="sectionImg"><img src="Images/laptopManHand.jpg" alt=""></div>
+            <div class="flex skills container">
+                <div id="skill1">
+                    <h3>html</h3>
+                </div>
+                <div id="skill2">
+                    <h3>css</h3>
+                </div>
+                <div id="skill3">
+                    <h3>js</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section id="Work" class="container">
+        <h2>Work</h2>
+        <div id="workCardList" class="flex container">
+            <div class="card">
+                <img src="Images/website1.jpg" alt="">
+                <button>View Details</button>
+            </div>
+            <div class="card">
+                <img src="Images/website2.avif" alt="">
+                <button>View Details</button>
+            </div>
+            <div class="card">
+                <img src="Images/website3.png" alt="">
+                <button>View Details</button>
+            </div>
+            <div class="card">
+                <img src="Images/website4.jpeg" alt="">
+                <button>View Details</button>
+            </div>
+            <div class="card">
+                <img src="Images/website5.avif" alt="">
+                <button>View Details</button>
+            </div>
+            <div class="card">
+                <img src="Images/website6.webp" alt="">
+                <button>View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="Contact" class="container">
+        <h2>Contact Me</h2>
+        <div id="level1" class="flex">
+            <div id="contactInfo" class="flex">
+
+                <div id="address" class="flex contactCon">
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i><span>Address</span>
+                    </div>
+                    <div>Mumbai, Maharashtra, India - 400610</div>
+                </div>
+                <div id="e-mail" class="flex contactCon">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i><span>E-Mail</span>
+                    </div>
+                    <div>dnyaneshwarpk 20@gmail.com</div>
+                </div>
+                <div id="phone" class="flex contactCon">
+                    <div>
+                        <i class="fa-solid fa-phone"></i><span>Phone</span>
+                    </div>
+                    <div>+91 0000000000</div>
+                </div>
+
+            </div>
+
+            <form action="/">
+                <label for="name">Full Name</label>
+                <input type="text" id="name">
+                <label for="femail">E Mail</label>
+                <input type="email" id="femail">
+                <label for="fmsg">Message</label>
+                <input type="text">
+                <input type="submit" id="submit">
+
+            </form>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer id="footer" class="flex container">
+        <div>
+            <h3>Logo</h3>
+        </div>
+        <div id="socialLogos" class="flex">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div>
+            <p>© copyright @ 2023 By mr.XXX</p>
+        </div>
+
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
