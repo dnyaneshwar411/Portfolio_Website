@@ -120,6 +120,7 @@ header nav ul {
 header nav ul li {
     padding: 0.4rem;
     border-radius: 1rem;
+    position: relative;
 }
 
 header nav ul li:hover {
@@ -129,6 +130,20 @@ header nav ul li:hover {
 header nav ul a {
     text-decoration: none;
     color: inherit;
+    animation: rotate180Deg 1s ease-in-out 1;
+    transform-origin: left;
+}
+
+@keyframes rotate180Deg {
+    0% {
+        transform: scale(0.8) rotateZ(90deg);
+        opacity: 0.1;
+    }
+
+    100% {
+        transform: scale(1) rotateZ(0deg);
+        opacity: 1;
+    }
 }
 
 header #Home {
@@ -138,9 +153,80 @@ header #Home {
     gap: 1rem;
 }
 
+header #Home h1 {
+    animation: slideBottom 1s ease-in-out 1;
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: scale(0.8) translateY(-20rem);
+        opacity: 0.1;
+    }
+
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+header #Home button {
+    animation: slideLeft 1s ease-in-out 1;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: scale(0.8) translateX(20rem);
+        opacity: 0.1;
+    }
+
+    100% {
+        transform: scale(1) translateX(0);
+        opacity: 1;
+    }
+}
+
+header #Home .flex {
+    animation: slideTop 1s ease-in-out 1;
+}
+
+@keyframes slideTop {
+    0% {
+        transform: scale(0.8) translateY(20rem);
+        opacity: 0.1;
+    }
+
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
 header #Home img {
     height: 30rem;
     aspect-ratio: 1/1;
+    animation: imgAni 2s linear infinite;
+}
+
+@keyframes imgAni {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-0.4rem);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(0.4rem);
+    }
+
+    100% {
+        transform: translateY(0rem);
+    }
 }
 
 header #Home div {
@@ -261,10 +347,10 @@ header #Home div i:hover {
 #Work #workCardList .card {
     position: relative;
     background-color: black;
-    height: 15em;
+    height: 15rem;
     aspect-ratio: 1.5/1;
     overflow: hidden;
-    border-radius: 1em;
+    border-radius: 1rem;
     box-shadow: 0px 0px 19px 5px grey;
 }
 
@@ -272,7 +358,7 @@ header #Home div i:hover {
     opacity: 0.9;
     height: 100%;
     aspect-ratio: 1.5/1;
-    border-radius: 1em;
+    border-radius: 1rem;
     transition: all 0.25s;
 }
 
@@ -295,7 +381,7 @@ header #Home div i:hover {
 
 #Contact {
     padding: 3rem;
-    background-color: purple;
+    background-color: #605450;
     background-image: url(Images/women.jpg);
     background-blend-mode: multiply;
     background-size: cover;
@@ -394,10 +480,17 @@ header #Home div i:hover {
 
 @media (max-width:1100px) {
 
+    header nav{
+        font-size: 4rem;
+    }
+
+    header h3{
+        font-size: 4rem;
+    }
+
     header nav span {
         display: block;
         z-index: 10;
-        font-size: 2em;
     }
 
     header #nav {
@@ -407,7 +500,6 @@ header #Home div i:hover {
         top: 0;
         width: 35rem;
         background-color: #9c918c;
-        box-shadow: ;
     }
 
     header nav ul {
@@ -422,7 +514,7 @@ header #Home div i:hover {
     }
 
     header nav ul li a {
-        font-size: 4em;
+        font-size: 4rem;
     }
 
     .nav-toggle {
